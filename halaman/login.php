@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient" style="background-color: #308e99;">
 
     <div class="container">
 
@@ -58,7 +58,7 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="../index.php" class="btn btn-primary btn-user btn-block">
+                                        <a href="beranda.php" class="btn btn-primary btn-user btn-block" style="background-color: #308e99;">
                                             Login
                                         </a>
                                     </form>
@@ -71,14 +71,15 @@
                                     </div>
                                 </div>
                             </div>
+                                <div>
+                                    <img src="../assets/sb/img/login.jpg" alt="login" style="width: 100%; height: 450px;">
+                                </div>
                         </div>
                     </div>
                 </div>
-
+                
             </div>
-
         </div>
-
     </div>
 
     <!-- Bootstrap core JavaScript-->

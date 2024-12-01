@@ -1,0 +1,567 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/*code untuk mengatur latar belakang dari navbar atau navigasi*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: rgb(255, 255, 255);
+    
+    /*code agar navigasi tetap berada di atas*/
+    position: sticky;
+    top: 0;
+}
+
+/*code unuk teks logo (ESEMKADA)*/
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+
+/*code untuk navigasi*/
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/*saat navigasi di tekan akan berwarna*/
+.navbar nav a:hover {
+    color: #d71372;
+}
+
+/**/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.cmpny-section {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin: 0%;
+}
+
+.cmpny-text {
+    flex: 1;
+}
+
+.cmpny-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cmpny-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #6c757d;
+}
+
+.cmpny-image {
+    position: relative;
+}
+
+.cmpny-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/*code untuk mengatur jarak antara buttons dengan teks*/
+.buttons {
+    margin-top: 20px;
+}
+
+/*untuk membuat tombol button pada teks "get started"*/
+.buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: #3b82f6;
+    transition: background-color 0.3s;
+}
+
+/*code untuk buttons vidio*/
+.buttons .vidio {
+    background-color: #ffffff;
+    color: #4a00e0;
+    border: 2px solid #4a00e0;
+}
+
+/*code agar saat tombol get di klik akan berwarna*/
+.buttons .get:hover {
+    background-color: #ff1afb;
+}
+
+/*code agar saat tombol vidio di klik akan berwarna*/
+.buttons .vidio:hover {
+    background-color: #0ee5fd;
+}
+
+/*code untuk mengatur tampilan teks "kenapa harus smk?"*/
+.isi {
+    text-align: center;
+    padding: 20px;
+}
+
+/*code untuk font ukuran h1*/
+h1 {
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+/*code untuk warna dalam font ukuran <h1> di dalam elemen <span> */
+h1 span {
+    color: #4a00e0;
+}
+
+/* code untuk elemen <p>*/
+p {
+    color: #666666;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/*code agar tampilan alasan sejajar ke samping*/
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*untuk mengatur box halaman ke2*/
+.feature {
+    background-color: #a1d8e8;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 2000px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*untuk mengatur box halaman ke2*/
+.feature1 {
+    background-color: #e3e8a1;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*code untuk class="feature" ukuran font h3*/
+.feature h3 {
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*code untuk class="feature" elemen <p>*/
+.feature p {
+    color: #676767;
+    margin: 0;
+}
+
+/*code untuk logo medsos*/
+.socials {
+    margin-top: 20px;
+}
+
+.socials img {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/*code ttg sambutan kepsek*/
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #F0EFFF;
+}
+
+/*code untuk mnegatur tampilan foto pada kepsek*/
+.profile-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*code untuk mengatur jarak (tulisan pada kepsek) dengan foto*/
+.profile-content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/*code untuk mengatur tulisan pada class="profil content" atau tulisan pada halaman kepsek yang ukuran font nya h1*/
+.profile-content h1 {
+    font-size: 32px;
+    color: #000000;
+}
+
+/*code untuk mengatur tulisan h1 di dalam elemen <span>*/
+.profile-content h1 span {
+    color: #0079ad;
+}
+
+/*code untuk mengatur tulisan pada ukuran font h2*/
+.profile-content h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+/*code untuk mengatur tulisan di dalam elemen <p> pada class="profile-content"*/
+.profile-content p {
+    font-size: 18px;
+    color: #666666;
+    margin: 20px 0;
+}
+
+/*code untuk tampilan pada halaman jurusan*/
+.program-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+/*code untuk teks dengan ukuran h1*/
+.program-section h1 {
+    font-size: 36px;
+    color: #000000;
+}
+
+/*code untuk teks h1 di dalam elemen <span>*/
+.program-section h1 span {
+    color: #4a00e0;
+}
+
+/*code untuk mengatur ukuran dan jarak(gap) pada card jurusan*/
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+}
+
+/*code untuk mengatur tampilan card*/
+.program-card {
+    background-color: #362FD9;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+/*code agar saat card di tekan membuat efek zoom*/
+.program-card:hover {
+    transform: scale(1.05);
+}
+
+/*code untuk mengatur tampilan icon atau logo jurusan*/
+.program-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/*code untuk mengatur teks di dalam class="program-card" dengan ukuran h2*/
+.program-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/*code untuk halaman extra*/
+.program-extra {
+    text-align: center;
+    padding: 40px;
+    background-color: #F0EFFF;
+}
+
+/*code untuk teks di dalam class="program-extra" pada ukuran h1*/
+.program-extra h1 {
+    font-size: 36px;
+    color: #000000;
+}
+
+/*code untuk teks pada ukuran h1 di dalam elemen <span>*/
+.program-extra h1 span {
+    color: #0079ad;
+}
+
+/*code untuk teks di dalam elemen <p>*/
+.program-extra p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+/*code untuk mengatur jarak atau grid pada card di halaman extra*/
+.program-grids {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+}
+
+/*code untuk mengatur card pada halaman extra*/
+.program-kartu {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /*mengatur posisi kanan/kiri */
+    transition: transform 0.2s;
+}
+
+/*code untuk mengatur teks pada ukuran h2 di dalam class="program-extra"*/
+.program-extra h2 {
+    font-size: 36px;
+    color: #000000;
+}
+
+/*code agar saat jurusan di pilih muncul efek zoom*/
+.program-kartu:hover {
+    transform: scale(1.05);
+}
+
+/*code unruk mengatur tampilan icon pada card extra*/
+.program-icon {
+    font-size: 36px;
+    margin-bottom: 10px; /*panjang ke bawah*/
+}
+
+/*code untuk mengatur tampilan teks pada ukuran h2 di dalam class="program-kartu*/
+.program-kartu h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/*code untuk halaman berita*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*code untuk mengatur posisi teks utama pada halaman berita*/
+.berita {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*code untuk teks dengan ukuran font h1 di halaman berita*/
+.berita h1 {
+    font-size: 2em;
+    color: #000000;
+}
+
+/*code untuk teks h1 di dalam elemen <span>*/
+.berita h1 span {
+    color: #0079ad;
+}
+
+/*code untuk mengatur tampilan teks di dalam elemen <p>*/
+.berita p {
+    color: #777;
+}
+
+/*untuk mengatur jarak pada card berita*/ 
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/*code untuk mengatur card pada halaman berita*/
+.news-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+/*code agar saat di pilih ada efek ke atas*/
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+/*untuk menagtur gambar pada berita*/
+.news-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/*untuk mengatur tampilan teks di dalam card*/
+.news-content {
+    padding: 15px;
+}
+
+/*code untuk mengatur teks pada class="date" atau tanggal berita*/
+.news-content .date {
+    color: #999;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+/*code untuk teks dengan ukuran h2*/
+.news-content h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+/*code unntuk teks di dalam elemen <p>*/
+.news-content p {
+    color: #555;
+    font-size: 0.9em;
+}
+
+/*code untuk teks "baca selengkapnnya" (link)*/
+.news-content a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/*code ketika di tekan akan muncul garis bawah*/
+.news-content a:hover {
+    text-decoration: underline;
+}
+
+/*code untuk halaman dokumentasi*/
+.kontain {
+    max-width: 1200px;
+    background-color: F0EFFF;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*code untuk judul di halaman dokumentasi*/
+.dokumentasi {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+/*code untuk teks dengan ukuran h1*/
+.dokumentasi h1 {
+    font-size: 2em;
+    color: #000000;
+}
+
+/*code untuk teks ukuran h1 di dalam elemen <span>*/
+.dokumentasi h1 span {
+    color: #0079ad;
+}
+
+/*code untuk mengatur jarak pada card*/
+.photo-grid {
+    display: flex; /*code agar sejajar*/
+    gap: 20px;
+    justify-content: center;
+}
+
+/*code untuk mengatur card pada halaman dokumentasi*/
+.photo-item {
+    background-color: #0079ad;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 30%;
+}
+
+/*code saat di pilih ada efek ke atas*/
+.photo-item:hover {
+    transform: translateY(-5px);
+}
+
+/*code untuk mengatur gambar pada card*/
+.photo-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*code untuk mengatur tampilan tulisan pada card dokumentasi*/
+.photo-content {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+/*code untuk mengatur tampilan teks dengan ukuran h2*/
+.photo-content h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+/**/
+header {
+    display: inline;
+}
+
+footer {
+    background-color: #F0EFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+  
+.footer-top .footer-nav {
+    margin-top: 10px;
+}
+  
+footer-top .footer-nav a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 10px;
+    font-size: 14px;
+}
+  
+.footer-top .footer-nav a:hover {
+    text-decoration: underline;
+}
+  
+.footer-bottom {
+    background-color: #0079ad; /* Warna abu-abu gelap */
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 12px;
+}
+  
+.footer-bottom .social-media {
+    margin-bottom: 10px;
+}
+  
+.footer-bottom .social-media a {
+    color: #ffffff;
+    margin: 0 8px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-bottom p {
+    color: #ffffff;
+}
+  
+.footer-bottom .social-media a:hover {
+    color: #00aaff; /* Warna biru untuk hover ikon */
+}

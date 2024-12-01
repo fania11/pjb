@@ -1,342 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPANY PROFIL</title>
+    <link rel="stylesheet" href="assets/company/style.css">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>PJB</title>
-
-    <!-- Custom fonts for this template-->
-    <link href="assets/sb/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <link href="assets/sb/css/sb-admin-2.min.css" rel="stylesheet">
-
+    <!--font google-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-
-<body id="page-top">
-
-    <!-- Page Wrapper -->
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
-                <div class="sidebar-brand-icon ">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">PJB</div>
-            </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <div class="sidebar-heading">
-                Menu
+<body>
+    <header>
+        <div class="isi">
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/company/image/logopln.png" height="40px">
             </div>
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                DATA
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Data</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">DATA:</h6>
-                        <a class="collapse-item" href="halaman/user.php">Data User</a>
-                        <a class="collapse-item" href="halaman/berita.php">Data Berita</a>
-                        <a class="collapse-item" href="halaman/galeri.php">Data Galery</a>
-                        <a class="collapse-item" href="halaman/agenda.php">Data Agenda</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                LAIN-LAIN
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="halaman/kritik.php" >
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Kritik & Saran</span>
-                </a>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="halaman/login.php">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Keluar</span></a>
-            </li>
-
-            
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-        </ul>
-        <!-- End of Sidebar -->
-
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content">
-
-                <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-
-                    <!-- Topbar Search -->
-                    
-
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
-
-                        
-
-                        <div class="topbar-divider d-none d-sm-block"></div>
-
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="assets/sb/img/undraw_profile.svg">
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </a>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </nav>
-                <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div>
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Earnings (Monthly)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Earnings (Annual)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Pending Requests</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content Row -->
-
-                </div>
-                <!-- /.container-fluid -->
-
-            </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
+            <nav>
+                <a href="index.php">BERANDA</a>
+                <a href="#ttg">PROFIL</a>
+                <a href="#berita">BERITA</a>
+                <a href="#kegiatan">GALERY</a>
+                <a href="halaman/login.php">login</a>
+            </nav>
         </div>
-        <!-- End of Content Wrapper -->
+        </div>
+    </header>
+         
+    <section class="cmpny-section">
+        <div class="cmpny-text">
+            <h1>UPPTN<br>PLN Nusantara Power</h1>
+            <p>Unit Pembangkitan Paiton adalah sebuah pembangkit listrik tenaga uap yang dikelola oleh PT PLN Nusantara Power, anak usaha dari PT PLN.</p>
+            <div class="buttons">
+                <a target="_blank()" href="https://www.plnnusantarapower.co.id/" class="get">Situs</a>
+                <a target="_blank()" href="https://youtu.be/3ljiisgZzqw?https://youtu.be/9mH6kN07grA?si=B95XpXtJ5guzfX7n=VIgPude00ZdveXyj" class="vidio">Vidio</a>
+            </div>
+            <p class="socials">We are in Socials Media :
+                <a target="_blank()" href="https://x.com/ptpln_np?t=CS3H8NLDq_yGSN6tcjfprg&s=08"><img src="assets/company/image/Vector.png" alt="Twitter"></a>
+                <a target="_blank()" href="https://www.instagram.com/plnnp_uppaiton?igsh=Z3YwbGFodWpjaWwz"><img src="assets/company/image/Vector (1).png" alt="Instagram"></a>
+                <a target="_blank()" href="https://youtube.com/@sekmumubjompaiton5318?si=dUYqSSjjpfM4i8H-"><img src="assets/company/image/Vector (2).png" alt="Youtube"></a>
+            </p>
+        </div>
+        <div class="cmpny-image">
+            <img src="assets/company/image/header.png" width="30px" height="400px">
+        </div>
+    </section>
 
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="halaman/login.php">Logout</a>
-                </div>
+<!--halaman tentang kami-->
+    <div class="isi">
+        <h1 id="ttg">Tentang kami</h1>
+        <p>tentang kami dan visi misi perusahaan.</p>
+        <div class="features">
+            <div class="feature">
+                <h3>Tentang kami</h3>
+                <p>PT PLN NUSANTARA POWER (PT PLN NP) sejak berdiri tahun 1995 yang awalnya bernama PT Pembangkitan Jawa-Bali (PT PJB) senantiasa mengabdikan diri untuk bangsa dan negara Indonesia, serta mendorong perkembangan perekonomian nasional dengan menyediakan energi listrik yang bermutu tinggi, andal dan ramah lingkungan. Dengan visi menjadi perusahaan pembangkit tenaga listrik Indonesia yang terkemuka dengan standar kelas dunia, PT PLN NP tiada henti berbenah dan melakukan inovasi dengan tetap berpegang pada kaidah tata pengelolaan perusahaan yang baik (Good Corporate Governance/GCG). Berkat dukungan shareholders dan stakeholders, PT PLN NP tumbuh dan berkembang dengan berbagai bidang usaha, tanpa meninggalkan tanggung jawab sosial perusahaan demi terwujudnya kemandirian masyarakat dan kelestarian lingkungan hidup.</p>
+            </div>
+            <div class="feature1">
+                <h3>Visi</h3>
+                <ul>
+                    <li>Menjadi Perusahaan Pembangkitan yang Terdepan dan Terpercaya untuk Energi Berkelanjutan di Indonesia dan Pasar Global</li>
+                </ul>
+            </div>
+            <div class="feature1">
+                <h3>Misi</h3>
+                <ul>
+                    <li>Menjaga Kinerja Pembangkit Listrik yang unggul sebagai kompetensi inti</li>
+                    <li>Membangun Bisnis Inovatif yang Terdepan untuk melakukan Diversifikasi dan pertumbuhan yang berkelanjutan</li>
+                    <li>Menjaga Kinerja Pembangkit Listrik yang Unggul Sebagai Kompetensi Inti</li>
+                    <li>Mengakselerasi Portofolio Bisnis EBT untuk Mendukung Tercapainya Nol Emisi Karbon</li>
+                    <li>Mengakuisisi dan Membangun Talenta Terbaik untuk Menjalankan Organisasi yang Responsif dan Adaptif</li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="assets/sb/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/sb/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--Halaman kepsek-->
+    <div class="profile-section" id="kepsek">
+        <div class="profile-image">
+            <img src="assets/company/image/Struktur-Organisasi-PLN-NP-2024-rev-dirkeu.png" height="350px">
+        </div>
+        <div class="profile-content">
+            <h1>Struktur<span>  Organisasi</span></h1>
+            <p>Sebagai salah satu bentuk penyelarasan dengan pengembangan bisnis perusahaan serta dalam rangka mendukung proses dan dinamika bisnis perusahaan maka pada tahun 2022 ini telah dilakukan penyesuaian terhadap struktur organisasi perusahaan.
+                Struktur organisasi PT PLN NP ditetapkan dalam Perdir 0026.P/019/DIR/2022 Tentang Organisasi dan Tata Kerja PT PLN NP.</p>
+        </div>
+    </div>
 
-    <!-- Core plugin JavaScript-->
-    <script src="assets/sb/vendor/jquery-easing/jquery.easing.min.js"></script>
+<!--Halaman perjalanan PLN NP-->
+<div class="profile-section" id="kepsek">
+    <div class="profile-image">
+        <img src="assets/company/image/perjalananpjb.png" height="350px">
+    </div>
+    <div class="profile-content">
+        <h1>Perjalanan<span>  PLN Nusantara Power</span></h1>
+        <p>Memiliki sejarah yang cukup panjang di dunia pembangkit listrik nasional. Sejarah berdirinya PLN NP tidak dapat dilepaskan dari sejarah panjang PT PLN (Persero). Sejarah PLN NP berawal dari restrukturisasi yang dilakukan PLN (Perusahaan Listrik Negara) pada tahun 1982, dengan melakukan pemisahan unit sesuai fungsinya yaitu Unit PLN Distribusi dan Unit PLN Pembangkitan serta Unit Penyaluran
+        </p>
+    </div>
+</div>
 
-    <!-- Custom scripts for all pages-->
-    <script src="assets/sb/js/sb-admin-2.min.js"></script>
+<!--Halaman berita-->
+    <div class="container">
+        <div class="berita"  id="berita">
+            <h1><span>Berita Terbaru</span> seputar PLN Nusantara Power UP Paiton</h1>
+        </div>
+        <main>
+            <div class="news-grid">
+                <!-- News Item -->
+                <div class="news-item">
+                    <img src="assets/company/image/penghargaan esg lingkungan.jpg">
+                    <div class="news-content">
+                        <p class="date">07 November 2024</p>
+                        <h2>PT PLN Nusantara Power UP Paiton Raih Penghargaan ESG Awards 2024, Tingkatkan Komitmen Pelestarian Lingkungan</h2>
+                        <p>By RedaksiMaduTV</p>
+                        <a target="_blank()" href="https://madu.tv/pt-pln-nusantara-power-up-paiton-raih-penghargaan-esg-awards-2024-tingkatkan-komitmen-pelestarian-lingkungan/">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/company/image/dirut kunjungi pltu paiton.jpeg">
+                    <div class="news-content">
+                        <p class="date"> 06 April 2024</p>
+                        <h2>Dirut PLN Kunjungi PLTU Paiton, Pastikan Pasokan Listrik Aman Jelang Idul Fitri</h2>
+                        <p>By PT PLN Persero</p>
+                        <a target="_blank()" href="https://web.pln.co.id/media/siaran-pers/2024/04/dirut-pln-kunjungi-pltu-paiton-pastikan-pasokan-listrik-aman-jelang-idul-fitri">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/company/image/kontribusi pln.png">
+                    <div class="news-content">
+                        <p class="date"> 30 oktober 2024</p>
+                        <h2>Kontribusi PLN Nusantara Power UP Paiton Menuju Indonesia Mandiri Energi, Wujudkan Ekonomi Kerakyatan melalui Co-Firing Biomassa</h2>
+                        <p>By Radarbromo</p>
+                        <a target="_blank()" href="https://radarbromo.jawapos.com/features/1005256997/kontribusi-pln-nusantara-power-up-paiton-menuju-indonesia-mandiri-energi-wujudkan-ekonomi-kerakyatan-melalui-co-firing-biomassa">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/company/image/penanaman aren.png">
+                    <div class="news-content">
+                        <p class="date"> 08 November 2024</p>
+                        <h2>PLN Nusantara Power UP Paiton Bantu Petani Aren Mandiri</h2>
+                        <p>By ngopibareng</p>
+                        <a target="_blank()" href="https://www.ngopibareng.id/read/pln-nusantara-power-up-paiton-bantu-petani-aren-mandiri">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <a target="_blank()" href="https://www.google.com/search?q=pln+nusantara+power+paiton&sca_esv=03429bed182545b4&biw=1280&bih=585&tbm=nws&sxsrf=ADLYWII4B5exaTva0Bt1Yq0BprIYedXujg%3A1731850629826&ei=hfE5Z5CMMuWp4-EPoKmmmQk&ved=0ahUKEwjQ4uCsvuOJAxXl1DgGHaCUKZMQ4dUDCA0&uact=5&oq=pln+nusantara+power+paiton&gs_lp=Egxnd3Mtd2l6LW5ld3MiGnBsbiBudXNhbnRhcmEgcG93ZXIgcGFpdG9uSNsWUKAFWKwPcAB4AJABAJgBywegAfYaqgEHNC0xLjIuMrgBA8gBAPgBAZgCAKACAJgDAIgGAZIHAKAH-x0&sclient=gws-wiz-news">Berita lainnya</a>
+            </div>
+        </main>
+    </div>
 
-    <!-- Page level plugins -->
-    <script src="assets/sb/vendor/chart.js/Chart.min.js"></script>
+<!--Halaman dokumentasi-->
+    <div class="kontain" id="kegiatan">
+        <div class="dokumentasi">
+            <h1>Foto <span>Dokumentasi</span> Kegiatan </h1>
+        </div>
+        <main>
+            <div class="photo-grid">
+                <!-- Photo Item -->
+                <div class="photo-item">
+                    <img src="assets/company/foto/cekcctv.jpg"></a>
+                    <div class="photo-content">
+                        <h2>Pengecekan perbaikan Cctv melalui monitor</h2>
+                    </div>
+                </div>
+                <!-- Repeat for more photo items -->
+                <div class="photo-item">
+                    <img src="assets/company/foto/crimping.jpg"></a>
+                    <div class="photo-content">
+                        <h2>Crimping kabel LAN</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/company/image/student.jpg"></a>
+                    <div class="photo-content">
+                        <h2>Student expost</h2>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 
-    <!-- Page level custom scripts -->
-    <script src="assets/sb/js/demo/chart-area-demo.js"></script>
-    <script src="assets/sb/js/demo/chart-pie-demo.js"></script>
-
+<!--Halaman footer-->
+<footer>
+    <div class="footer-top">
+      <div class="logo"><img src="assets/company/image/logopln.png" height="50"></div>
+      <nav class="footer-nav">
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="social-media">
+        <a target="_blank()" href="https://x.com/ptpln_np?t=CS3H8NLDq_yGSN6tcjfprg&s=08"><img src="assets/company/image/twit.png" alt="Twitter"></a>
+        <a target="_blank()" href="https://www.instagram.com/plnnp_uppaiton?igsh=Z3YwbGFodWpjaWwz"><img src="assets/company/image/ig.png" alt="Instagram"></a>
+        <a target="_blank()" href="https://youtube.com/@sekmumubjompaiton5318?si=dUYqSSjjpfM4i8H-"><img src="assets/company/image/yt.png" alt="YouTube"></a>
+      </div>
+      <p> Jl. Raya Surabaya-Situbondo No.Km.142, Area Sawah, Bhinor, Kec. Paiton, Kabupaten Probolinggo, Jawa Timur 67291</p>
+    </div>
+  </footer>
 </body>
-
 </html>
