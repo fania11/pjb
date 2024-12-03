@@ -77,30 +77,6 @@
         </div>
     </div>
 
-<!--Halaman sruktur-->
-    <div class="profile-section" id="struktur">
-        <div class="profile-image">
-            <img src="assets/company/image/Struktur-Organisasi-PLN-NP-2024-rev-dirkeu.png" height="350px">
-        </div>
-        <div class="profile-content">
-            <h1>Struktur<span>  Organisasi</span></h1>
-            <p>Sebagai salah satu bentuk penyelarasan dengan pengembangan bisnis perusahaan serta dalam rangka mendukung proses dan dinamika bisnis perusahaan maka pada tahun 2022 ini telah dilakukan penyesuaian terhadap struktur organisasi perusahaan.
-                Struktur organisasi PT PLN NP ditetapkan dalam Perdir 0026.P/019/DIR/2022 Tentang Organisasi dan Tata Kerja PT PLN NP.</p>
-        </div>
-    </div>
-
-<!--Halaman perjalanan PLN NP-->
-<div class="profile-section" id="perjalanan">
-    <div class="profile-image">
-        <img src="assets/company/image/perjalananpjb.png" height="350px">
-    </div>
-    <div class="profile-content">
-        <h1>Perjalanan<span>  PLN Nusantara Power</span></h1>
-        <p>Memiliki sejarah yang cukup panjang di dunia pembangkit listrik nasional. Sejarah berdirinya PLN NP tidak dapat dilepaskan dari sejarah panjang PT PLN (Persero). Sejarah PLN NP berawal dari restrukturisasi yang dilakukan PLN (Perusahaan Listrik Negara) pada tahun 1982, dengan melakukan pemisahan unit sesuai fungsinya yaitu Unit PLN Distribusi dan Unit PLN Pembangkitan serta Unit Penyaluran
-        </p>
-    </div>
-</div>
-
 <!--Halaman berita-->
     <div class="container">
         <div class="berita"  id="berita">
@@ -159,34 +135,23 @@
             <div class="photo-grid">
                 <!-- Photo Item -->
                 <div class="photo-item">
-                    <img src="assets/company/image/santunan.png"></a>
                     <div class="photo-content">
-                        <h2>Santunan anak yatim</h2>
+                        <h2>Jum'at sehat & jum'at bugar (senam)</h2>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="assets/company/image/penanaman mangrove.png"></a>
                     <div class="photo-content">
-                        <h2>Penghijauan area pesisir</h2>
+                        <h2>Jum'at bersih (bersih-bersih area)</h2>
                         <br>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="assets/company/image/program petani.png"></a>
-                    <div class="photo-content">
-                        <h2>Launching program petani aren mandiri</h2>
-                        <br>
-                    </div>
-                </div>
-                <div class="photo-item">
-                    <img src="assets/company/image/bulan berbagi.png"></a>
                     <div class="photo-content">
                         <h2>Bulan Berbagi Buku dan Baju </h2>
                         <br>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="assets/company/image/upacara HLN.png"></a>
                     <div class="photo-content">
                         <h2>Upacara bendera dalam rangka HLN ke-79</h2>
                         <br>

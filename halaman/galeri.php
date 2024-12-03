@@ -1,3 +1,5 @@
+<?php require '../database/koneksi.php' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,6 +25,9 @@
 </head>
 
 <body id="page-top">
+<?php session_start();
+    //MENGAMBIL VALUE PAGE YANG TERDAPAT PADA URL
+    $content = (isset($_GET["page"])) ? $_GET["page"] : ""; ?> 
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -125,42 +130,7 @@
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-
-                        
-
                         <div class="topbar-divider d-none d-sm-block"></div>
-
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="../assets/sb/img/undraw_profile.svg">
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </a>
-                            </div>
-                        </li>
-
                     </ul>
 
                 </nav>
@@ -179,7 +149,35 @@
 
                     
                      <!-- crud disini -->
-                   
+                     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10">
+            <?php
+            //UNTUK PEMBERITAHUAN SUCCES DATA SUDAH DIOLAH 
+            if(isset($_SESSION['flash'])){
+                echo $_SESSION['flash'];
+                unset($_SESSION['flash']);
+            }
+
+            //PERPINDAHAAN PAGES WEBSITE
+            switch ($content) {
+                case 'add':
+                    require '../controllers/galeri/create.php';
+                    break;
+                case 'delete':
+                    require '../controllers/galeri/delete.php';
+                    break;
+                case 'update':
+                    require '../controllers/galeri/update.php';
+                    break;
+                //YANG PERTAMA KALI DI JALANKAN SELAIN DARI CASE DIATAS
+                default: 
+                    require '../controllers/galeri/read.php';
+                    break;
+            } ?>
+            </div>
+        </div>
+    </div>
 
                     <!-- Content Row -->
 
@@ -224,7 +222,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.php">Logout</a>
+                    <a class="btn btn-primary" href="../index.php">Logout</a>
                 </div>
             </div>
         </div>
