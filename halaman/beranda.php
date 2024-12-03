@@ -86,14 +86,6 @@
                 LAIN-LAIN
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="kritik.php" >
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Kritik & Saran</span>
-                </a>
-            </li>
-
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">

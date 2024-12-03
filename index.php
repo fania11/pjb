@@ -20,8 +20,9 @@
             </div>
             <nav>
                 <a href="index.php">BERANDA</a>
-                <a href="#ttg">PROFIL</a>
+                <a href="#profil">PROFIL</a>
                 <a href="#berita">BERITA</a>
+                <a href="#agenda">AGENDA</a>
                 <a href="#kegiatan">GALERY</a>
                 <a href="halaman/login.php">login</a>
             </nav>
@@ -50,8 +51,8 @@
 
 <!--halaman tentang kami-->
     <div class="isi">
-        <h1 id="ttg">Tentang kami</h1>
-        <p>tentang kami dan visi misi perusahaan.</p>
+        <h1 id="profil">PROFIL</h1>
+        <p>Berikut profil perusahaan.</p>
         <div class="features">
             <div class="feature">
                 <h3>Tentang kami</h3>
@@ -76,8 +77,8 @@
         </div>
     </div>
 
-<!--Halaman kepsek-->
-    <div class="profile-section" id="kepsek">
+<!--Halaman sruktur-->
+    <div class="profile-section" id="struktur">
         <div class="profile-image">
             <img src="assets/company/image/Struktur-Organisasi-PLN-NP-2024-rev-dirkeu.png" height="350px">
         </div>
@@ -89,7 +90,7 @@
     </div>
 
 <!--Halaman perjalanan PLN NP-->
-<div class="profile-section" id="kepsek">
+<div class="profile-section" id="perjalanan">
     <div class="profile-image">
         <img src="assets/company/image/perjalananpjb.png" height="350px">
     </div>
@@ -149,32 +150,45 @@
         </main>
     </div>
 
-<!--Halaman dokumentasi-->
-    <div class="kontain" id="kegiatan">
+<!--Halaman agenda-->
+    <div class="kontain" id="agenda">
         <div class="dokumentasi">
-            <h1>Foto <span>Dokumentasi</span> Kegiatan </h1>
+            <h1><span>Agenda</span></h1>
         </div>
         <main>
             <div class="photo-grid">
                 <!-- Photo Item -->
                 <div class="photo-item">
-                    <img src="assets/company/foto/cekcctv.jpg"></a>
+                    <img src="assets/company/image/santunan.png"></a>
                     <div class="photo-content">
-                        <h2>Pengecekan perbaikan Cctv melalui monitor</h2>
+                        <h2>Santunan anak yatim</h2>
                     </div>
                 </div>
-                <!-- Repeat for more photo items -->
                 <div class="photo-item">
-                    <img src="assets/company/foto/crimping.jpg"></a>
+                    <img src="assets/company/image/penanaman mangrove.png"></a>
                     <div class="photo-content">
-                        <h2>Crimping kabel LAN</h2>
+                        <h2>Penghijauan area pesisir</h2>
                         <br>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="assets/company/image/student.jpg"></a>
+                    <img src="assets/company/image/program petani.png"></a>
                     <div class="photo-content">
-                        <h2>Student expost</h2>
+                        <h2>Launching program petani aren mandiri</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/company/image/bulan berbagi.png"></a>
+                    <div class="photo-content">
+                        <h2>Bulan Berbagi Buku dan Baju </h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/company/image/upacara HLN.png"></a>
+                    <div class="photo-content">
+                        <h2>Upacara bendera dalam rangka HLN ke-79</h2>
                         <br>
                     </div>
                 </div>
@@ -182,6 +196,45 @@
         </main>
     </div>
 
+<!--Halaman dokumentasi-->
+<div class="kontain" id="kegiatan">
+        <div class="dokumentasi">
+            <h1> Galery </h1>
+        </div>
+        <main>
+            <div class="photo-grid">
+                <!-- Photo Item -->
+                <div class="photo-item">
+                    <img src="assets/company/foto/senam.jpg"></a>
+                    <div class="photo-content">
+                        <h2>Jum'at sehat dengan melaksanakan senam</h2>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/company/foto/lari.jpg"></a>
+                    <div class="photo-content">
+                        <h2>Event running dalam rangka merayakan HLN ke-79</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/company/foto/lomba.jpg"></a>
+                    <div class="photo-content">
+                        <h2>Lomba 17 agustus yang ke-79</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/company/foto/oh.png"></a>
+                    <div class="photo-content">
+                        <h2>Monitoring safety untuk pekerja OverHoul </h2>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
 <!--Halaman footer-->
 <footer>
     <div class="footer-top">
