@@ -1,11 +1,12 @@
 <?php 
+$uploadDir = '../file/galery/';
 $judul_galeriErr = $gambarErr = $tanggalErr= "";
 if(isset($_POST['save'])){
-    if(!isset($_POST['judul_galeri']) || !isset($_POST['gambar']) || !isset($_POST['tanggal'])){
+    if(empty($_POST['judul_galeri']) || empty($_FILES['gambar']['name']) || empty($_POST['tanggal'])){
         if($_POST['judul_galeri'] == ""){
-        $judul_galeriErr = "judul tidak boleh kosong!";
+            $judul_galeriErr = "judul tidak boleh kosong!";
         }
-        if($_POST['gambar'] == ""){
+        if($_FILES['gambar']['name'] == ""){
             $gambarErr = "gambar tidak boleh kosong!";
         }
         if($_POST['tanggal'] == ""){
@@ -14,10 +15,13 @@ if(isset($_POST['save'])){
     }else{
         $id_galeri = $_GET['id_galeri'];
         $judul_galeri = $_POST['judul_galeri'];
-        $gambar = $_POST['gambar'];
         $tanggal = $_POST['tanggal'];
 
-        $query = "INSERT INTO galeri (judul_galeri,gambar,tanggal) VALUES('$judul_galeri', '$gambar', '$tanggal' )";
+        // Handle file upload
+        $gambar = basename($_FILES['gambar']['name']);
+        $targetFilePath = $uploadDir . $gambar;
+        move_uploaded_file($_FILES['gambar']['tmp_name'], $targetFilePath);
+
         $query = "UPDATE galeri SET judul_galeri='$judul_galeri', gambar='$gambar', tanggal='$tanggal' WHERE id_galeri=$id_galeri";
         if (mysqli_query($connect, $query)) {
             echo "<div class=\"alert alert-success\" role=\"alert\">Berhasil diubah</div>";
@@ -54,7 +58,8 @@ $data = mysqli_fetch_array($result);
         </div>
         <div class="form-group">
             <label for="inputGambar">gambar</label>
-            <input type="gambar" name="gambar" class="form-control" id="inputGambar" value="<?= $data['gambar'] ?>" maxlength="30" required>
+            <img src="<?php echo $uploadDir.$data['gambar'] ?>" height="50">
+            <input type="file" name="gambar" class="form-control" id="inputGambar" value="<?= $data['gambar'] ?>" maxlength="30" required>
             <small class="text-danger"><?= $gambarErr == "" ? "":"* $gambarErr" ?></small>
         </div>
         <div class="form-group">

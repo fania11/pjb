@@ -1,4 +1,5 @@
-<?php require '../database/koneksi.php' ?>
+<?php require '../database/koneksi.php' ;
+?>
 
 <!DOCTYPE html>
 <html lang="en">

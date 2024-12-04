@@ -1,40 +1,60 @@
 <?php
+require_once(__DIR__ . '/../../database/koneksi.php');
+$uploadDir = '../file/galery/'; // TEMPAT SIMPAN FILE YANG DIUPLOAD
+if (!is_dir($uploadDir)) {
+    mkdir($uploadDir, 0755, true);
+}
 // VARIABEL UNTUK MENYIMPAN PESAN (VALIDASI)
 $judul_galeriErr = $gambarErr = $tanggalErr = "";
 
 // JIKA MENGIRIMKAN DATA DENGAN NAME "SAVE" (TOMBOL SAVE TELAH DI KLIK)
 if (isset($_POST['save'])) {
-    // JIKA DATA ADA YANG KOSONG
-    if (
-        empty($_POST['judul_galeri']) || 
-        empty($_POST['gambar']) || 
-        empty($_POST['tanggal'])
-    ) {
-        if (empty($_POST['judul_galeri'])) {
+    $judul_galeri = $_POST['judul_galeri'];
+    $tanggal = $_POST['tanggal'];
+    
+    $imgName = $_FILES['gambar']['name'];
+        $imgTmp = $_FILES['gambar']['tmp_name'];
+        $imgSize = $_FILES['gambar']['size'];
+    
+    
+    if (empty($judul_galeri)) {
             $judul_galeriErr = "judul tidak boleh kosong!";
-        }
-        if (empty($_POST['gambar'])) {
-            $gambarErr = "gambar tidak boleh kosong!";
-        }
-        if (empty($_POST['tanggal'])) {
+    }elseif (empty($tanggal)) {
             $tanggalErr = "tanggal tidak boleh kosong!";
+    }else {
+            $imgExt = strtolower(pathinfo($imgName, PATHINFO_EXTENSION));
+
+			$allowExt  = array('jpeg', 'jpg', 'png', 'gif');
+
+			$Pic = time().'_'.rand(1000,9999).'.'.$imgExt;
+
+			if(in_array($imgExt, $allowExt)){
+
+				if($imgSize < 50000000){
+					move_uploaded_file($imgTmp ,$uploadDir.$Pic);
+				}else{
+					$gambarErr = 'Image too large';
+				}
+			}else{
+				$gambarErr = "gambar tidak boleh kosong!";
+			}
+            
         }
-    } else {
-        // JIKA SEMUA FORM TERISI
-        $judul_galeri = $_POST['judul_galeri'];
-        $gambar = $_POST['gambar'];
-        $tanggal = $_POST['tanggal'];
-
+     
+        
         // KONEKSI DATABASE (PASTIKAN $connect SUDAH DIBUAT TERLEBIH DAHULU)
-        $query = "INSERT INTO galeri (judul_galeri, gambar, tanggal) 
-                  VALUES ('$judul_galeri', '$gambar', '$tanggal')";
-
+        // Update with the correct path to your database connection file
+        if(empty($gambarErr) && empty($judul_galeriErr) && empty($tanggalErr)){
+            $query = "INSERT INTO galeri (judul_galeri, gambar, tanggal) VALUES ('$judul_galeri', '$Pic', '$tanggal')";
+            
+         
         if (mysqli_query($connect, $query)) {
             echo "<div class=\"alert alert-success\" role=\"alert\">Berhasil disimpan</div>";
         } else {
             echo "<div class=\"alert alert-danger\" role=\"alert\">Gagal disimpan: " . mysqli_error($connect) . "</div>";
         }
     }
+    
 }
 ?>
 
@@ -43,7 +63,7 @@ if (isset($_POST['save'])) {
         <path fill="#000000" d="M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M18,11H10L13.5,7.5L12.08,6.08L6.16,12L12.08,17.92L13.5,16.5L10,13H18V11Z" />
     </svg> Back To Data
 </a>
-<div class="container">
+    <form action="" method="post" enctype="multipart/form-data">
     <form action="" method="post">
         <div class="form-group">
             <label for="inputJudul_galeri">judul_galeri</label>
@@ -52,7 +72,7 @@ if (isset($_POST['save'])) {
         </div>
         <div class="form-group">
             <label for="inputGambar">gambar</label>
-            <input type="text" name="gambar" class="form-control" id="inputGambar" maxlength="30" required>
+            <input type="file" name="gambar" class="form-control" id="gambar" required>
             <small class="text-danger"><?= $gambarErr == "" ? "" : "* $gambarErr" ?></small>
         </div>
         <div class="form-group">

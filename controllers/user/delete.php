@@ -10,5 +10,5 @@ if(mysqli_query($connect, $query)){
     $_SESSION['flash'] = "<div class=\"alert alert-danger\" role=\"alert\">Data gagal terhapus</div>";
 }
 
-//REDIRECT KE base_url = http://localhost/cr/
-echo "<script>window.location='".$WEB_CONFIG["base_url"]."';</script>";
+//REDIRECT KE user.php
+echo "<script>window.location='".$WEB_CONFIG["base_url"]."halaman/user.php';</script>";

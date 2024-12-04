@@ -11,4 +11,4 @@ if(mysqli_query($connect, $query)){
 }
 
 //REDIRECT KE base_url = /
-echo "<script>window.location='".$WEB_CONFIG["base_url"]."';</script>";
+echo "<script>window.location='".$WEB_CONFIG["base_url"]."halaman/agenda.php';</script>";
